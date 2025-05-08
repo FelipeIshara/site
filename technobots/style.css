@@ -141,12 +141,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
   
 }
 
 .fotos-depoimento img { 
-  height: 250px; 
+  width: 200px; 
+  height: 250px;
   border-radius: 8px;
   object-fit: cover; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -166,7 +166,18 @@ body {
   width: 200px;
 }
 
-  
+.img-container {
+  width: 200px; 
+  height: 250px;
+  overflow: hidden;  /* esconde as partes que “vazam” */
+}
+
+.img-container img {
+  width: 100%;       /* ou height: 100%; dependendo do efeito */
+  height: 100%;
+  object-fit: cover; /* mantém proporção e preenche todo o container */
+  object-position: center top; /* define que parte da imagem fica visível */
+} 
   
       
       
