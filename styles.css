@@ -157,6 +157,21 @@ footer {
     margin-top: 2em;
 }
 
+/* cor laranja do convite e sublinhado suave */
+.link-cronograma {
+  color: #ffa726;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.link-cronograma:hover {
+  color: #fb8c00;
+}
+
+
+
+
 @keyframes slideUp {
     from {
         opacity: 0;
