@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Ocean</title>
+  <link rel="icon" href="favicon.png" type="https://mail.google.com/mail/u/0?ui=2&ik=13d4e6aa9d&attid=0.1&permmsgid=msg-f:1831608076349427403&th=196b2dd7568b4ecb&view=fimg&fur=ip&permmsgid=msg-f:1831608076349427403&sz=s0-l75-ft&attbid=ANGjdJ8TApcyzkPkvoibtxAcoyrG7JxMDqVwoWg3hmLxGaeaTOfJJI7LDASJ9pFv_M8pTTRnVtM4GmNgiT67TGg5BAkdNoWjSbhI6OopJB-ZwoP9pZ-WJwdpbvRgHN8&disp=emb&realattid=ii_mag6etx00&zw">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+    header {
+      background-color: #00008B;
+      color: black;
+      padding-bottom: 0;
+      text-align: center;
+    }
+    .logo-container {
+      background-color: #0F1828;
+      padding: 1rem;
+    }
+    .logo-container img {
+      width: 30%;
+    }
+    nav {
+      background-color: #093746;
+      padding: 0.5rem;
+      border-top: 2px solid white;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #1E3A8A;
+    }
+    nav a.active {
+      background-color: #2563EB;
+    }
+    section {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    section.active {
+      display: block;
+    }
+  .box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .box:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #093857;
+      color: white;
+      margin-top: 1rem;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .team-member {
+      text-align: center;
+      width: 30%;
+    }
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .galeria-item img {
+  transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/Qdhh3jLF/Design-sem-nome-10.png" alt="equipe" style="width: 20%;">
+    </div>
+    <nav>
+      <a href="javascript:void(0);" class="active" onclick="showTab('sobre')">Equipe</a>
+      <a href="javascript:void(0);" onclick="showTab('galeria')">Projetos</a>
+      <a href="javascript:void(0);" onclick="showTab('FLL')">FLL</a>
+    </nav>
+  </header>
+
+  <section id="sobre" class="active">
+    <div class="box">
+      <h2 style="text-align: center;">Equipe</h2>
+      <p style="text-align: center;">
+      Conheça os integrantes da nossa equipe!
+      </p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://i.postimg.cc/m2NNDynm/949d77ca-595a-4d03-a590-34a1f29b2e3b.jpg" alt="Ana">
+          <p><strong>Valentina</strong><br>Idade: 9 anos<br><br></p>
+        </div>
+           <div class="team-member">
+          <img src="samuel.jpg" alt="Samuel">
+          <p><strong>Samuel</strong><br>Idade: 10 anos<br><br></p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.postimg.cc/gJCry1x3/b838f39d-fd98-4e7d-9ca5-87c0bc2ea7cd.jpg" alt="Carlos">
+          <p><strong>Kevin</strong><br>Idade: 7 anos<br><br></p>
+        </div>
+        <div class="team-member">
+          <img src="lorenzo.jpg" alt="Lorenzo">
+          <p><strong>Lorenzo</strong><br>Idade: 7 anos<br><br><br></p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.postimg.cc/26hCYy5B/e1548255-6e61-4a25-b336-09957852d875.jpg" alt="Lívia">
+          <p><strong>Alice</strong><br>Idade: 9 anos<br><br><br></p>
+        </div>
+        <div class="team-member">
+            <img src="arthur.jpg" alt="Lívia">
+        <p><strong>Arthur</strong><br>Idade: 7 anos<br><br><br></p>
+        </div>
+      </div>
+    </div><br>
+    <div class="box">
+      <h2>Sobre a Equipe</h2>
+      <p>Somos um grupo de estudantes apaixonados por tecnologia e robótica. Vamos participar da FLL, e criamos projetos inovadores.</p>
+      <img src="https://i.postimg.cc/hPhtYDBc/f6bf073a-a9d7-4230-b2be-19fc803e8aff.jpg" alt="foto da equipe" style="width: 50%;">
+     <img src="equipe-ocean.jpg" alt="foto da equipe" style="width: 40%;">
+    </div><br>
+    <div class="box">
+      <h2>Experiência dos integrantes na realização do projeto</h2>
+      <p>Os integrantes relataram que a experiência durante a realização do projeto foi interessante, divertida e acima de tudo, muito educativa "<em>Nós gostamos muito de realizar este projeto, foi muito divertido, conseguimos trabalhar muito bem em equipe e aprendemos bastante coisa</em>".
+      </div>
+      <br>
+        <div class="box">
+      <h2>Sede da equipe</h2>
+      <p>Nossa sede é em São Paulo, no bairro da Liberdade. Rua Mazzini 61, Colégio Paulo de Tarso.</p>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; justify-content: center;">
+  <img 
+    src="https://lh5.googleusercontent.com/p/AF1QipNMChiQxBbmtXWmt1zDHisTdySovVN0wU57KDI=w650-h486-k-no" 
+    alt="Colégio da equipe" 
+    style="width: 45%; max-width: 400px; height: auto; border-radius: 8px;">
+    
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.8182378786365!2d-46.62594405541928!3d-23.563541489098107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590cc06fadd7%3A0xfc815f17565a6b2!2sCol%C3%A9gio%20Paulo%20de%20Tarso!5e0!3m2!1spt-BR!2sbr!4v1746660605008!5m2!1spt-BR!2sbr" 
+    width="45%" 
+    height="300" 
+    style="border:0; border-radius: 8px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="box">
+      <h2>Projetos</h2>
+      <div class="galeria-item">
+    <div style="display: flex; align-items: center;">
+    <img src="https://cdn.awsli.com.br/2240/2240977/produto/2163100623e9965681f.jpg" style="width: 400px; height: auto; margin-right: 60px;">
+    <p> Submarino que limpa o lixo dos oceanos! <br>
+          Este projeto em forma de submarino explora e limpa o lixo dos oceanos. <br>
+          O submarino é programado para identificar lixo e limpando ele dos oceanos. <br>
+      Um ótimo exemplo de automação básica em ação!</p>
+  </div>
+<div style="display: flex; align-items: center; justify-content: flex-end;">
+  <p style="margin-right: 60px;">
+   Robô dançarino em ação! <br>
+          Ele sincroniza movimentos com o ritmo da música. <br>
+          Uma mistura de engenharia e diversão.    
+  </p>
+  <img
+    src="https://i0.wp.com/educacional.com.br/wp-content/uploads/2023/06/image-14.webp?w=721&ssl=1"
+    alt="imagem carregando"
+    style="width: 300px; height: auto;">
+</div>
+         <div style="display: flex; align-items: center;">
+    <img src="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt6fdb0d2d2f7b00ed/5fc4bc4609ed4c6f277f147f/teacher-parts-ef532aa74d8575c21d26f52da260fae5.png?locale=pt-br&auto=webp&format=jpeg&width=800&quality=90&fit=bounds" alt="Descrição da imagem" style="width: 400px; height: auto; margin-right: 60px;">
+    <p> Um robô versátil com peças modulares. <br>
+          Ideal para testes de mobilidade e controle remoto. <br>
+          Excelente para aprender sobre montagem e programação.</p>
+  </div>
+        <div style="display: flex; align-items: center; justify-content: flex-end;">
+  <p style="margin-right: 60px;">
+    Este é o Robô Pulga! <br>
+          Pequeno, ágil e veloz. <br>
+          Projetado para corridas e desafios de labirinto.    
+  </p>
+  <img
+    src="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltbd3c4a0796fee6f0/60ee9b9f6a54304c405909ba/student-06.png?locale=pt-br&auto=webp&format=jpeg&width=800&quality=90&fit=bounds"
+    alt="imagem carregando"
+    style="width: 300px; height: auto;">
+</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="FLL">
+    <h2>FIRST LEGO League (FLL) 🤖🌍</h2>
+    <p>
+      A <strong>FIRST LEGO League</strong> é uma competição internacional de robótica educacional que incentiva crianças e adolescentes a resolverem problemas do mundo real usando ciência, tecnologia, engenharia e matemática (STEM) 💡🔧📐.
+    </p>
+    <p>
+      As equipes devem projetar, construir e programar robôs feitos com peças LEGO 🧱 para cumprir missões em uma mesa de desafios. Além disso, cada time desenvolve um <strong>Projeto de Inovação</strong> 💭, propondo soluções criativas para temas super atuais!
+    </p>
+    <p>
+      A FLL valoriza o <strong>trabalho em equipe</strong> 👥, o <strong>respeito</strong> 🙌 e a <strong>cooperação</strong> mesmo durante a competição — é o famoso “<em>coopertition</em>” 🤝.
+    </p>
+    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/cecfo.jpg" alt="Mesa de desafios FLL" style="width:300px; height:300px;">
+    <p>Nosso grupo está se preparando com tudo para competir na FLL! 💪 Estamos animados para mostrar nossas ideias, aprender com outras equipes e, claro, nos divertir muito durante o processo! 🚀🏆</p>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> POWER OCEAN
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => link.classList.remove('active'));
+     
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`nav a[onclick="showTab('${tabId}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
